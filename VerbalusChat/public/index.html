@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Verbalus Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chat-container">
+
+    <!-- Сайдбар -->
+    <div class="chat-sidebar">
+        <div class="profile-block">
+            <h3 id="profileName">Профиль</h3>
+            <p>ID: <span id="myID"></span></p>
+        </div>
+        <input id="targetID" placeholder="Введите ID друга">
+    </div>
+
+    <!-- Основной чат -->
+    <div class="chat-main">
+        <div class="chat-header">Чат</div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input-container">
+            <input id="chatInput" placeholder="Напишите сообщение...">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="sendMessage()">Отправить</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.jss"></script>
+</body>
+</html>
